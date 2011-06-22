@@ -1,0 +1,16 @@
+KLADR converter allows to convert KLADR.DBF and STREET.DBF to SQLite database as-is or as a linked items (every street hash city ID)
+
+How to use
+First, you must to import library
+
+require 'kladr_converter'
+
+Then use!
+
+Kladr_sqlite::save_linked( 'path/to/KLADR.DBF', 'path/to/STREET.DBF', 'path/to/sqlite.db', true )
+Kladr_sqlite::save_raw( 'path/to/KLADR.DBF', 'path/to/STREET.DBF', 'path/to/sqlite.db', false )
+
+First parameter is a path to KLADR.DBF
+Second parameter is a path to STREET.DBF
+Third parameter is a path to database file
+Forth parameter is a boolean variable that determines progressbar displaying

@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   # s.extensions    = `git ls-files ext/extconf.rb`.split("\n")
  
   s.require_path = 'lib'
+  s.add_dependency( 'dbf' )
+  s.add_dependency( 'progressbar' )
  
   # For C extensions
   # s.extensions = "ext/extconf.rb"
